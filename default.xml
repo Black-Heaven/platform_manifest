@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch="https://android.googlesource.com/" />
+           fetch=".." />
   
   <remote  name="gh"
            fetch="http://github.com/"
@@ -16,9 +16,9 @@
            fetch="http://github.com/CyanogenMod/"
            revision="ics" />
     
-  <default revision="master"
+  <default revision="refs/tags/android-4.0.4_r1.1"
            remote="aosp"
-           sync-j="8" />
+           sync-j="4" />
 
   <project path="build" name="platform/build">
     <copyfile src="core/root.mk" dest="Makefile" />
